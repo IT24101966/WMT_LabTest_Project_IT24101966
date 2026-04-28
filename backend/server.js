@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Item Manager API is running..." });
 });
 
-app.use("/api/items", itemRoutes);
+app.use("/items", itemRoutes);
 
 const PORT = process.env.PORT || 5000;
 
